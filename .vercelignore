@@ -1,7 +1,9 @@
 # Keep internal files off the public Vercel deployment — only the website is published.
-AMI_Brand_Guidelines_2026_DIGITAL.pdf.pdf
-Logo.svg
-README.md
-serve.ps1
-start-server.bat
-.claude
+# Leading slashes anchor each entry to the project root: Vercel matches these case-insensitively,
+# so an unanchored "Logo.svg" would also drop assets/img/logo.svg.
+/AMI_Brand_Guidelines_2026_DIGITAL.pdf.pdf
+/Logo.svg
+/README.md
+/serve.ps1
+/start-server.bat
+/.claude
